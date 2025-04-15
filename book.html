@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shangri-La Beach Resort | Book Now</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-weather">
+      <img src="images/logo.svg" alt="Shangri-La Logo" class="logo">
+      <div class="weather">Loading weather...</div>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="accommodations.html">Accommodations</a></li>
+        <li><a href="dining.html">Dining</a></li>
+        <li><a href="spa.html">Spa</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="book.html">Book Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Reserve Your Stay in Paradise</h1>
+    <p>Complete the form below and we’ll get back to you with availability and booking details.</p>
+
+    <form class="booking-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="checkin">Check-In Date:</label>
+      <input type="date" id="checkin" name="checkin" required>
+
+      <label for="checkout">Check-Out Date:</label>
+      <input type="date" id="checkout" name="checkout" required>
+
+      <label for="room">Room Type:</label>
+      <select id="room" name="room">
+        <option value="single">Single</option>
+        <option value="double">Double</option>
+        <option value="king">King</option>
+      </select>
+
+      <label for="message">Additional Notes:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Let us know anything else..."></textarea>
+
+      <button type="submit">Submit Reservation</button>
+    </form>
+
+    <section class="contact-info">
+      <h2>Contact Us</h2>
+      <p><strong>Email:</strong> reservations@shangrilabeachresort.com</p>
+      <p><strong>Phone:</strong> +52 123 456 7890</p>
+      <p><strong>Address:</strong> Playa Cancún, Mexico</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Shangri-La Beach Resort. All rights reserved.</p>
+      <p>Follow us on social media</p>
+    </div>
+  </footer>
+
+  <script src="weather.js"></script>
+</body>
+</html>
